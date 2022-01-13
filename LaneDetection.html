@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Lane Detection</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Lane Detection</h1>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+						<section id="content" class="main">
+							<div class="alignRow">
+								<div class="imageColumn">
+									<p style="text-align:center">Grayscale</p>
+									<img src="images/grayscale01_318x318.jpg">
+								</div>
+								<div class="imageColumn">
+									<p style="text-align:center">White/Yellow Mask</p>
+									<img src="images/while_yellow_mask01_318x318.jpg">
+								</div>
+								<div class="imageColumn">
+									<p style="text-align:center">Edges</p>
+									<img src="images/edges01_318x318.jpg">
+								</div>
+							</div>
+							<h2>Language: Python</h2>
+							<p>The algorithm takes an image of a driver on the road and produces the same image but with the road lanes highlighted. The datasets were taken from Berkeley's Deep Drive dataset. The most important part about the project was knowing where to highlight edges. This can be done in 3 steps: reduce noise, extract yellow and white lines, and produce relavent straight Lines. These 3 steps correspond to the images above. The algorithm will be trained to detect which of the edges correspond to road lines. I used SIFT and KNN to detect the relavent edges.</p>
+
+						</section>
+
+					</div>
+
+				
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
